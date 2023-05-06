@@ -101,18 +101,10 @@ sh scripts/install_frankmocap.sh
     SMPL-X model (SMPLX_NEUTRAL.pkl):
         路径：/extra_data/smpl/SMPLX_NEUTRAL.pkl
 
-
 安装[Detectron2](https://github.com/facebookresearch/detectron2)用于手部检测
 
 ```
 python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu113/torch1.10/index.html
-```
-
-在项目根目录下使用下列命令安装 hand detector 相关依赖
-
-```
-cd detectors/hand_object_detector/lib
-python setup.py build develop
 ```
 
 ## 使用
