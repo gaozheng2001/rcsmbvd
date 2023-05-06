@@ -6,9 +6,12 @@ __pycache__/
 /detectors
 /extra_data
 # 排除测试代码
+/ros_control/full_arm.py
+/ros_control/test_ctr.py
+/ros_control/test_move.py
 /full_body.py
 /full_mocap.py
-/img2joints.py
+/img2pose.py
 /mocap.py
 # 排除数据集和输出文件
 /mocap_output
