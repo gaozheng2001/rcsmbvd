@@ -1,11 +1,16 @@
+# 排除vscode配置文件
 /.vscode
-/__pycache__
+# 排除cache文件
+__pycache__/
+# 排除模型文件
 /detectors
 /extra_data
+# 排除测试代码
 /full_body.py
 /full_mocap.py
 /img2joints.py
 /mocap.py
+# 排除数据集和输出文件
 /mocap_output
 /output_images
 /sample_data

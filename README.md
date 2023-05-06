@@ -2,13 +2,13 @@
 
 ## 安装
 
-科隆本仓库至本地并创建虚拟环境。
+克隆本仓库至本地并创建虚拟环境。
 
 ```
 sudo apt install git
 sudo apt install python3 python3-pip
 
-git clone 
+git clone https://github.com/gaozheng2001/rcsmbvd.git
 cd rcsmbvd
 
 conda create -n rcsmbvd python=3.9
@@ -89,7 +89,18 @@ sudo apt-get install ffmpeg
 
 # Install pytorch and torchvision
 conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
+
+# Install other third-party libraries + download pretrained models and sample data
+sh scripts/install_frankmocap.sh
 ```
+
+请在[该网站](https://git.29tech.cn/qshsit/frankmocap/-/tree/master/extra_data/smpl)下载 SMPL 模型。
+
+    SMPL Model (Neutral model: basicModel_neutral_lbs_10_207_0_v1.0.0.pkl)：
+        路径：/extra_data/smpl/basicModel_neutral_lbs_10_207_0_v1.0.0.pkl
+    SMPL-X model (SMPLX_NEUTRAL.pkl):
+        路径：/extra_data/smpl/SMPLX_NEUTRAL.pkl
+
 
 安装[Detectron2](https://github.com/facebookresearch/detectron2)用于手部检测
 
