@@ -1,0 +1,14 @@
+/.vscode
+/__pycache__
+/detectors
+/extra_data
+/full_body.py
+/full_mocap.py
+/img2joints.py
+/mocap.py
+/mocap_output
+/output_images
+/sample_data
+/ssss
+/test_data
+/ttt
