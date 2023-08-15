@@ -60,6 +60,7 @@ source devel/setup.bash
 
 ```
 mv related_resources/rcsmbvd catkin_workspace/src/rcsmbvd
+cd catkin_workspace
 catkin_make
 ```
 
@@ -143,7 +144,7 @@ python -m ros_control.real_arm_service_ctr
 # Start ROS
 roscore
 
-# tart the human body 3D detection node
+# start the human body 3D detection node
 python img2joints.py --input_path webcam
 
 # Start the robotic arm control node
